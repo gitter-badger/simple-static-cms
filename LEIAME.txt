@@ -1,0 +1,15 @@
+Projeto deste site
+
+Exigências - somente páginas estáticas, em HTML, CSS e JavaScript.
+
+Recursos
+
+- Framework Bootstrap
+- Menu DropDown Multinível e fixo no topo
+- Pequeno CSS dentro do cabecalho.txt para customizar algumas tags: body, h1, h2, etc
+- Criação de um arquivo 
+cabecalho.txt, contendo todo o header com CSS e javascript e também todo o menu
+- No menu, o path de cada arquivo deve ser absoluto, para que seja visto por todos os subdiretórios
+- Método load do jQuery para carregar o cabeçalho acima de cada arquivo com conteúdo
+- Para que a carga do css e javascript fosse possível em outros subdiretórios, o path deles é fixo para o raiz.
+

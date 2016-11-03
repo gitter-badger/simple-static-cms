@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RibaFS Portal</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/cakephp3-livro/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style>
+* { margin: 0 auto; padding: 0; }
+html { overflow-y: scroll; }
+body { font: 14px/1.4 Helvetica, sans-serif; background: #333; color: #333; margin: 0; padding: 0;}
+h1 { font: bold 32px Helvetica, Arial, Sans-Serif; letter-spacing: -1px; padding: 4px; color: #154C85; text-shadow: 1px 1px 1px white; }
+h2 { color: #7C0606; font-family: 'trebuchet ms', verdana, arial; font-size: large; font-weight: bold; padding: 5px; margin: 0; }
+h3 { color: #010F5E;font-weight: bold; margin: 5px;}
+p { margin: 0 0 15px 0; }
+strong { color: #0A3801;}
+a { color: #820505;}
+table { border-collapse: collapse; }
+form { padding: 15px; background-color: #ffe; border: 1px solid #ddd; }
+td { vertical-align: top; }
+#conteudo {background: white; color: #333; width: 700; margin: 2 auto;padding:10}
+</style>
+  </head>
+  <body>
+      <!-- Navbar fixed top -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <h2 align="center"><a href="#">RibaFS Portal</a></h2>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+          
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="/cakephp3-livro/index.html">Início</a></li>
+
+          	  <!-- Início Básicos -->                      			  
+              <li><a href="basicos">Básicos<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="basicos/html">HTML</a></li>
+                  <li><a href="basicos/css">CSS</a></li>                  
+                  <li><a href="basicos/javascript">Javascript</a></li>
+                  <li><a href="basicos/jquery">jQuery</a></li>                  
+                  <li><a href="basicos/bootstrap">Bootstrap</a></li>                                    
+                  <li><a href="basicos/php">PHP</a></li>                  
+                  <li><a href="basicos/phpoo">PHPOO</a></li>                  
+                  <li><a href="basicos/pdo">PDO</a></li>                  
+                  <li><a href="basicos/padroes">Padrões de Projeto</a></li>                  
+                </ul>                
+             </li><!-- Final do Básicos -->  
+
+          	  <!-- Início Servidores -->                      			  
+              <li><a href="servidores">Servidores<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="servidores/desktop">Desktop</a></li>
+                  <li><a href="servidores/ubuntu">Ubuntu</a></li>                  
+                  <li><a href="servidores/centos">CentOS</a></li>
+                  <li><a href="servidores/scripts">Scripts</a></li>                  
+                </ul>
+             </li><!-- Final do Servidores -->  
+
+          	  <!-- Início PostgreSQL -->                      			  
+              <li><a href="postgresql">PostgreSQL<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="postgresql/introducao">Introdução</a></li>
+                  <li><a href="postgresql/administracao">Administracao</a></li>                  
+                  <li><a href="postgresql/instalacao">Instalação</a></li>
+                  <li><a href="postgresql/configuracoes">Configurações</a></li>                  
+                  <li><a href="postgresql/backup">Backup</a></li>                  
+                  <li><a href="postgresql/configuracoes">Importar e Exportar</a></li>                  
+                  <li><a href="postgresql/modelagem">Modelagem</a></li>
+                  <li><a href="postgresql/seguranca">Segurança</a></li>                                    
+                  <li><a href="postgresql/ferramentas">Ferramentas</a></li>
+
+              	  <!-- Início Controller -->                      
+                  <li><a href="postgresql/funcoes">Funções<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="3postgresql/funcoes/sql">SQL</a></li>                    
+                      <li><a href="3postgresql/funcoes/plpgsql">PlPgSQL</a></li>
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de Controller -->
+                  
+                </ul>
+             </li><!-- Final do PostgreSQL -->  
+
+          	  <!-- Início CakePHP -->                      			  
+              <li><a href="cakephp">CakePHP<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="ck-introducao">Introdução</a></li>
+                  <li><a href="/cakephp3-livro/cakephp/justificativa.html">Justificativa</a></li>                  
+                  <li><a href="cakephp/instalacao">Instalacao</a></li>                  
+                  <li><a href="cakephp/convencoes">Convenções</a></li>
+                  <li><a href="cakephp/configuracoes">Configurações</a></li>                  
+                  <li><a href="cakephp/mvc">MVC</a></li>                  
+                  <li><a href="cakephp/dicas">Dicas</a></li>                  
+                  <li><a href="cakephp/migrations">Migrations</a></li>
+                  <li><a href="cakephp/seguranca">Segurança</a></li>                                    
+                  <li><a href="cakephp/composer">Composer</a></li>
+
+              	  <!-- Início Controller -->                      
+                  <li><a href="cakephp/controller">Controller<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="cakephp/controller">Controllers</a></li>                    
+                      <li><a href="cakephp/controller">Component</a></li>
+                      <li><a href="cakephp/controller">AppController</a></li>                      
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de Controller -->
+
+              	  <!-- Início Model -->                      
+                  <li><a href="cakephp/model">Model<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="cakephp/model">Behavior</a></li>                    
+                      <li><a href="cakephp/model">Entity</a></li>
+                      <li><a href="cakephp/model">Table</a></li>                      
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de Model -->
+                  
+              	  <!-- Início View -->                      
+                  <li><a href="cakephp/view">View<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="cakephp/view">View</a></li>                    
+                      <li><a href="cakephp/template">Template</a></li>
+                      <li><a href="cakephp/helper">Helper</a></li>                      
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de View -->
+                  
+                </ul>
+             </li><!-- Final do CakePHP -->  
+
+          	  <!-- Início Joomla -->                      			  
+              <li><a href="joomla">Joomla<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="joomla/site">Introdução</a></li>
+                  <li><a href="joomla/site">Criação de Sites</a></li>                  
+
+              	  <!-- Início Controller -->                      
+                  <li><a href="joomla/programacao">Programação<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="joomla/programacao">Código</a></li>                                                                              
+                      <li><a href="joomla/programacao">Módulos</a></li>                    
+                      <li><a href="joomla/programacao">Componentes</a></li>
+                      <li><a href="joomla/programacao">Plugins</a></li>
+                      <li><a href="joomla/programacao">Templates</a></li>
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de Controller -->
+                  
+                </ul>
+             </li><!-- Final do Joomla -->  
+
+          	  <!-- Início Mobile -->                      			  
+              <li><a href="mobile">Mobile<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="4cakephp/introducao">Introdução</a></li>
+                  <li><a href="4cakephp/instalacao">Instalacao</a></li>                  
+                  <li><a href="4cakephp/convencoes">Convenções</a></li>
+                  <li><a href="4cakephp/configuracoes">Configurações</a></li>                  
+                  <li><a href="4cakephp/mvc">MVC</a></li>                  
+                  <li><a href="4cakephp/dicas">Dicas</a></li>                  
+                  <li><a href="4cakephp/migrations">Migrations</a></li>
+                  <li><a href="4cakephp/seguranca">Segurança</a></li>                                    
+                  <li><a href="4cakephp/composer">Composer</a></li> 
+
+              	  <!-- Início Controller -->                      
+                  <li><a href="cakephp/controller">Controller<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="4cakephp/controller">Controllers</a></li>                    
+                      <li><a href="4cakephp/controller">Component</a></li>
+                      <li><a href="4cakephp/controller">AppController</a></li>                      
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de Controller -->
+                 
+                </ul>
+             </li><!-- Final do Mobile -->  
+
+             <li><a href="livros">Meus Livros</a></li>             
+
+          	  <!-- Início Blog -->                      			  
+              <li><a href="blog">Blog<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+              	  <!-- Início Reflexões -->                      
+                  <li><a href="4cakephp/controller">Reflexões<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="4cakephp/controller">Controllers</a></li>                    
+                      <li><a href="4cakephp/controller">Component</a></li>
+                      <li><a href="4cakephp/controller">AppController</a></li>                      
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de Reflexões -->
+
+              	  <!-- Início Saúde -->                      
+                  <li><a href="blog/saude">Saúde<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="4cakephp/controller">Controllers</a></li>                    
+                      <li><a href="4cakephp/controller">Component</a></li>
+                      <li><a href="4cakephp/controller">AppController</a></li>                      
+                    </ul><!-- Final de dropdown-menu -->
+                  </li><!-- Final de a href="#">Controller-->
+                  <!-- final de Saúde -->                 
+                </ul>
+             </li><!-- Final do Blog -->  
+              
+            </ul><!-- Final de nav navbar-nav -->          
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div>
+    <div class="container" style="margin-top:70px;">
+
+    <!-- JavaScript ao final do documento para que a página carregue mais rapidamente -->
+<!--    <script src="/cakephp3-livro/js/jquery-1.11.3.min.js"></script>-->
+    <script src="/cakephp3-livro/js/bootstrap.min.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="/cakephp3-livro/js/jquery.smartmenus.js"></script>
+
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="/cakephp3-livro/js/jquery.smartmenus.bootstrap.js"></script>    
+<!-- Final do Cabeçalho -->
