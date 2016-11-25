@@ -1,5 +1,7 @@
 # STATIC CMS
 
+[![Join the chat at https://gitter.im/simple-static-cms/Lobby](https://badges.gitter.im/simple-static-cms/Lobby.svg)](https://gitter.im/simple-static-cms/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Achei que seria interessante mudar o nome deste projeto para Static CMS, pois esta é a ideia, criar uma estrutura que forneça as facilidades de gerenciamento de conteúdo que um bom CMS fornece, além de contar ainda com bons recursos e grande controle por conta da simpicidade dos componentes.
 
 # Criação de um Site com Conteúdo Estático
